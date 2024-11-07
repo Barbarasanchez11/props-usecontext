@@ -1,4 +1,10 @@
 /* App.css */
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -7,7 +13,10 @@
 }
 
 .calculator {
+  padding: 20px;
   margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .buttons {
@@ -23,8 +32,60 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: #c947f1;
+  cursor: pointer; 
+  position: relative; 
+  overflow: hidden; 
+  transition: color 0.3s; 
+}
+
+button:hover {
+  color: rgb(106, 10, 115); 
+}
+
+.buttons p {
+  color: #c947f1;
+}
+
+.buttons h2 {
+  color: #c947f1;
 }
 
 .result {
-  margin-top: 20px;
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 20px; 
+  text-align: center; 
 }
+
+.result h2 {
+  font-size: 1.8rem; 
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.result p {
+  font-size: 1.2rem; 
+  color: #555; 
+  margin: 5px 0;
+}
+
+.result a {
+  display: inline-block;
+  margin-top: 15px; 
+  padding: 10px 20px; 
+  background-color: #c947f1; 
+  color: white; 
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.result a:hover {
+  background-color: #a83dc4; 
+  transform: translateY(-2px); 
+}
+
